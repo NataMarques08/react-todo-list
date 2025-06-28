@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.create-task{
+    width: 100%;
+    height: 6vh;
+    border: 1px solid #ccc;
+    display: flex;
+    border-radius: 5px;
+}
+.icon-task-container{
+    width: 7%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16a3b7;
+}
+.icon-task{
+    color: #fff;
+}
+.create-task input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #494949;
+}
