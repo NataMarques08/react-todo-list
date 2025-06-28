@@ -1,10 +1,10 @@
 import './Button.css';
 
-function Button({width, children, onClick}){
+function Button({width, children, background, onClick}){
     return(
         <button
             className="button"
-            style={{width: width}}
+            style={{width: width, background: background}}
             onClick={() => onClick(children)}
         >
             {children}
