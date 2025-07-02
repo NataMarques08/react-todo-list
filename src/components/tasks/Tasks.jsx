@@ -2,7 +2,7 @@ import './Tasks.css';
 import Button from '../button/Button.jsx';
 import Todo from '../todo/Todo.jsx';
 
-function Tasks(){
+function Tasks({ tasks }){
     return (
         <div className="tasks-main-container">
              <h1>To Do List</h1>
@@ -12,10 +12,11 @@ function Tasks(){
                 <Button width="50%">Todo</Button>
             </div>
             <div className="tasks-container">
-                <Todo/>
-                <Todo/>
-                <Todo/>
-                <Todo/>
+                {tasks.map((task, index) =>(
+                    <Todo key={index} task={task}/>
+                ))}
+                
+         
             </div>
             <div className="tasks-buttons-footer">
                 <Button width="100%" background="#db3345">Add Task</Button>
